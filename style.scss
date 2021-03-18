@@ -1,9 +1,15 @@
+@mixin sp {
+	@include sp {
+		@content;
+	}
+}
+
 .contentArea {
   background: #fff;
   padding: 120px 0;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .contentArea {
     padding: calc(120vw / 750 * 100) 0;
   }
@@ -18,7 +24,7 @@
   }
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .contentArea--lead + .contentArea {
     padding: 0 0 calc(120vw / 750 * 100);
   }
@@ -43,7 +49,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .defaultSection {
     padding-top: calc(50/750*100%);
     padding-bottom: calc(50/750*100%);
@@ -55,7 +61,7 @@
   line-height: calc(40 / 28);
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .defaultSection__headline {
     font-size: calc(42vw / 750 * 100);
     padding: 0 calc(40vw / 750 * 100);
@@ -68,7 +74,7 @@
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .defaultSection__text {
     font-size: calc(21vw / 750 * 100);
     line-height: calc(42 / 21);
@@ -77,7 +83,7 @@
   }
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .defaultSection__headline, .defaultSection__text {
     padding: 0;
   }
@@ -97,7 +103,7 @@
   right: 5px;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .photo__caption {
     bottom: inherit;
     bottom: unset;
@@ -111,7 +117,7 @@
   margin-top: 22px;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .photo + .headline {
     margin-top: calc(37vw / 750 * 100);
   }
@@ -258,7 +264,7 @@
   width: calc(656/1000*100%);
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .layoutCol__item--two, .layoutCol__item--three, .layoutCol__item--threeDouble {
     width: 100%;
   }
@@ -282,7 +288,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .pc {
     display: none;
   }
@@ -365,7 +371,7 @@
   }
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .leadTxt {
     font-size: calc(48vw / 750 * 100);
   }
@@ -406,13 +412,13 @@
   font-size: 24px;
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .lowTxt__large {
     font-size: calc(40vw / 750 * 100);
   }
 }
 
-@media only screen and (max-width: 736px) {
+@include sp {
   .defaultSection__headline {
     .number {
       font-size: 72px;
