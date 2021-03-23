@@ -276,34 +276,6 @@
   }
 }
 
-.lowsubHeading__small {
-  position: relative;
-  font-size: 14px;
-  line-height: 1.428;
-}
-
-.lowsubHeading__small {
-  +.lowTxt__small {
-    margin-top: 10px;
-  }
-
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-  }
-
-  &::before {
-    margin-top: calc((1 - 1.428) * 0.5em);
-  }
-
-  &::after {
-    margin-bottom: calc((1 - 1.428) * 0.5em);
-  }
-}
-
 /* text */
 
 .leadTxt {
