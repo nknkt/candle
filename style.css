@@ -121,44 +121,38 @@
 }
 
 .caption--inLeft {
-  bottom: 0;
-  left: 0;
-  padding: 5px;
+  bottom: 5px;
+  left: 5px;
   text-align: left;
 }
 
 .caption--inUpLeft {
-  top: 0;
-  left: 0;
-  padding: 5px;
+  top: 5px;
+  left: 5px;
   text-align: left;
 }
 
 .caption--outLeft {
-  top: 100%;
-  left: 0;
-  padding: 5px 0;
+  bottom: -30px;
+  left: 5px;
   text-align: left;
 }
 
 .caption--inRight {
-  bottom: 0;
-  right: 0;
-  padding: 5px;
+  bottom: 5px;
+  right: 5px;
   text-align: right;
 }
 
 .caption--inUpRight {
-  top: 0;
-  right: 0;
-  padding: 5px;
+  top: 5px;
+  right: 5px;
   text-align: right;
 }
 
 .caption--outRight {
-  top: 100%;
-  right: 0;
-  padding: 5px 0;
+  bottom: -30px;
+  right: 5px;
   text-align: right;
 }
 
