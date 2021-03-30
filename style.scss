@@ -106,12 +106,55 @@
 	}
 }
 
+.leadTxt {
+	font-size: 38px;
+	line-height: 1.5;
+
+	@include sp {
+		font-size: calc(48vw / 750 * 100);
+	}
+}
+
+.lowTxt {
+	font-size: 14px;
+	letter-spacing: .16em;
+	line-height: 1.857;
+
+	&__small {
+		font-size: 12px;
+		line-height: 1.666;
+	}
+
+	&__large {
+		font-size: 24px;
+
+		@include sp {
+			font-size: calc(40vw / 750 * 100);
+		}
+	}
+}
+
 .imgWrap {
 	position: relative;
 
 	.caption {
 		position: absolute;
 		font-size: 12px;
+	}
+
+	&__box {
+		padding: 30px 25px;
+		color: #000;
+		border: 1px solid #bfbfbf;
+		background: #fff;
+
+		>.lowTxt {
+			margin-bottom: 20px;
+		}
+
+		+.caption {
+			margin-top: 10px;
+		}
 	}
 }
 
@@ -183,6 +226,10 @@
 	&__item {
 		width: 100%;
 
+		img {
+			max-width: 100%;
+		}
+
 		&--two {
 			width: calc(484/1000*100%);
 
@@ -234,50 +281,5 @@
 
 	.sp {
 		display: block;
-	}
-}
-
-.imgWrap__box {
-	padding: 30px 25px;
-	color: #000;
-	border: 1px solid #bfbfbf;
-	background: #fff;
-
-	>.lowTxt {
-		margin-bottom: 20px;
-	}
-
-	+.caption {
-		margin-top: 10px;
-	}
-}
-
-/* text */
-
-.leadTxt {
-	font-size: 38px;
-	line-height: 1.5;
-
-	@include sp {
-		font-size: calc(48vw / 750 * 100);
-	}
-}
-
-.lowTxt {
-	font-size: 14px;
-	letter-spacing: .16em;
-	line-height: 1.857;
-
-	&__small {
-		font-size: 12px;
-		line-height: 1.666;
-	}
-
-	&__large {
-		font-size: 24px;
-
-		@include sp {
-			font-size: calc(40vw / 750 * 100);
-		}
 	}
 }
