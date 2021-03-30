@@ -86,11 +86,7 @@
 
 @media only screen and (max-width: 736px) {
   .photo__caption {
-    bottom: inherit;
-    bottom: unset;
     font-size: calc(18vw / 750 * 100);
-    right: 0;
-    top: 100%;
   }
 }
 
@@ -170,19 +166,16 @@
 .caption--inLeft {
   bottom: 5px;
   left: 5px;
-  text-align: left;
 }
 
 .caption--inUpLeft {
   top: 5px;
   left: 5px;
-  text-align: left;
 }
 
 .caption--outLeft {
   bottom: -30px;
   left: 5px;
-  text-align: left;
 }
 
 .caption--inRight {
@@ -233,10 +226,6 @@
 
 .layoutCol__item {
   width: 100%;
-}
-
-.layoutCol__item img {
-  max-width: 100%;
 }
 
 .layoutCol__item--two {

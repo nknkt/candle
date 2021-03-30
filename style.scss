@@ -80,11 +80,7 @@
 		right: 5px;
 
 		@include sp {
-			bottom: inherit;
-			bottom: unset;
 			font-size: calc(18vw / 750 * 100);
-			right: 0;
-			top: 100%;
 		}
 	}
 }
@@ -162,19 +158,16 @@
 	&--inLeft {
 		bottom: 5px;
 		left: 5px;
-		text-align: left;
 	}
 
 	&--inUpLeft {
 		top: 5px;
 		left: 5px;
-		text-align: left;
 	}
 
 	&--outLeft {
 		bottom: -30px;
 		left: 5px;
-		text-align: left;
 	}
 
 	&--inRight {
@@ -225,10 +218,6 @@
 
 	&__item {
 		width: 100%;
-
-		img {
-			max-width: 100%;
-		}
 
 		&--two {
 			width: calc(484/1000*100%);
